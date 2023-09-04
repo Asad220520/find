@@ -1,0 +1,8 @@
+#agents{
+  padding-top: 180px;
+  .agents{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 32px;
+  }
+}

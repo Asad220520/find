@@ -1,0 +1,103 @@
+#home {
+  .home {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 64px;
+    &__img {
+      img {
+        max-width: 1184px;
+        min-height: 400px;
+        flex-shrink: 0;
+      }
+    }
+    h1 {
+      position: absolute;
+      max-width: 500px;
+      color: red;
+      z-index: 1;
+      color: var(--color-bg, #fff);
+      text-align: center;
+      font-size: 50.52px;
+      font-weight: 600;
+      padding-top: 58px;
+    }
+    &__block {
+      position: absolute;
+      top: 85%;
+      background: #000;
+      width: 100%;
+      z-index: 2;
+      padding: 24px;
+      gap: 24px;
+      border-radius: 32px;
+      border: 1px solid rgba(0, 74, 96, 0.5);
+      background: #fff;
+      &-wr {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        .button {
+          &__item {
+            display: flex;
+            gap: 8px;
+            button {
+              padding: 8px 16px;
+              border-radius: 8px;
+              border: 1px solid rgba(0, 74, 96, 0);
+              margin-bottom: 8px;
+              color: rgba(0, 74, 96, 0.7);
+              border: 1px solid rgba(0, 74, 96, 0.5);
+              font-size: 16px;
+              background: none;
+            }
+            select {
+              border: 1px solid rgba(0, 74, 96, 0.5);
+              background: none;
+              padding: 8px 16px;
+              border-radius: 8px;
+              color: rgba(0, 74, 96, 0.7);
+              font-size: 16px;
+            }
+          }
+        }
+        &-input {
+          display: flex;
+          justify-content: space-between;
+          width: 63%;
+          padding: 16px 16px 16px 32px;
+          justify-content: space-between;
+          align-items: center;
+          flex-shrink: 0;
+          border-radius: 16px;
+          background: rgba(0, 74, 96, 0.1);
+          input {
+            background: none;
+            font-size: 18px;
+            color: rgba(0, 74, 96, 0.5);
+          }
+          input::placeholder {
+            color: rgba(0, 74, 96, 0.5);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          button {
+            display: flex;
+            padding: 16px;
+            align-items: center;
+            gap: 8px;
+            border-radius: 8px;
+            background: var(--color-main, #1b76f9);
+            color: var(--color-bg, #fff);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

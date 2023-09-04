@@ -1,0 +1,41 @@
+.newPropertiesCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 256px;
+  height: 344px;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 74, 96, 0.5);
+  &__img {
+    width: 240px;
+    height: 240px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title {
+    h1 {
+      color: var(--color-text, #004a60);
+      font-size: 21.33px;
+      font-weight: 500;
+      padding: 16px 0 8px 0;
+    }
+    &-price {
+      display: flex;
+      justify-content: space-between;
+    }
+    p {
+      color: rgba(0, 74, 96, 0.7);
+      font-size: 16px;
+      font-weight: 400;
+    }
+    span {
+      color: var(--color-main, #1b76f9);
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
